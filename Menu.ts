@@ -61,7 +61,7 @@ export function main() {
 
                 tipo = readlinesync.keyInSelect(tipoProduto, "", { cancel: false }) + 1;
 
-                preco = readlinesync.questionFloat("Digite o Preco da Camisa: ");
+                preco = readlinesync.questionFloat("Digite o Preco: ");
 
                 switch (tipo) {
                     case 1:
