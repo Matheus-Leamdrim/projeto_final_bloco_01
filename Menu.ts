@@ -1,10 +1,18 @@
 import readlinesync from "readline-sync";
 import { colors } from "./src/util/Colors";
+import { Roupas} from "./src/model/Roupas";
+import {Calçados} from "./src/model/Calçados";
 
 
 export function main() {
 
     let opcao, id, tipo, preco: number;
+    
+    const c1: Roupas = new Roupas(1,"Camisa",1,70,"Poliester")
+    c1.visualizar();
+
+    const s1: Calçados= new Calçados(2,"Tenis",2,250,"Couro")
+    s1.visualizar();
     
     let tipoProduto = ['Roupas', 'Calçados'];
 
